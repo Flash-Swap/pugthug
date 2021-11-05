@@ -1,13 +1,12 @@
 :root {
-  --primary-color: #EE671D;
-  --ssecondary-color: #0D0907;
-  --title-color: #0081A7;
-  --color-dark: #FFFEFD;
+  --primary-color: #ee671d;
+  --ssecondary-color: #0d0907;
+  --title-color: #0081a7;
+  --color-dark: #fffefd;
 }
 
-
 .nav-item {
-  color: #FFFEFD;
+  color: #fffefd;
 }
 .nav-item:hover {
   color: var(--primary-color);
@@ -18,14 +17,14 @@
 }
 
 .py-6 {
-  padding-bottom: 2rem!important;
-  padding-top: 2rem!important;
+  padding-bottom: 2rem !important;
+  padding-top: 2rem !important;
 }
 
 @media (min-width: 768px) {
   .py-md-8 {
-    padding-bottom: 3rem!important;
-    padding-top: 3rem!important;
+    padding-bottom: 3rem !important;
+    padding-top: 3rem !important;
   }
 }
 
@@ -70,15 +69,13 @@
   }
 }
 
-
 /*
 !!!!
 This pen is being refactored
 !!!!
 */
 
-
-.time{
+.time {
   display: var(--timeDisplay, inline-flex);
 }
 
@@ -86,11 +83,11 @@ This pen is being refactored
 skin
 */
 
-.time{
-  padding: var(--timePadding, .25rem 1.25rem .25rem);
+.time {
+  padding: var(--timePadding, 0.25rem 1.25rem 0.25rem);
   background-color: var(--timeBackgroundColor, #f0f0f0);
 
-  font-size: var(--timeFontSize, .75rem);
+  font-size: var(--timeFontSize, 0.75rem);
   font-weight: var(--timeFontWeight, 700);
   text-transform: var(--timeTextTransform, uppercase);
   color: var(--timeColor, currentColor);
@@ -104,49 +101,147 @@ card component
 core styles
 */
 
-
-
 /*
 extensions
 */
 
-
-.timeline{
+.timeline {
   display: var(--timelineDisplay, grid);
   grid-row-gap: var(--timelineGroupsGap, 2rem);
   grid-column-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
-
-
-.timeline{
+.timeline {
   --uiTimelineMainColor: var(--timelineMainColor, #222);
   --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
 
-  border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
+  border-left: var(--timelineLineWidth, 3px) solid
+    var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
   padding-top: 1rem;
   padding-bottom: 1.5rem;
 }
 
-.timeline__year{
-  --timePadding: var(--timelineYearPadding, .5rem 1.5rem);
+.timeline__year {
+  --timePadding: var(--timelineYearPadding, 0.5rem 1.5rem);
   --timeColor: var(--uiTimelineSecondaryColor);
   --timeBackgroundColor: var(--uiTimelineMainColor);
   --timeFontWeight: var(--timelineYearFontWeight, 400);
 }
 
-.timeline__card{
+.timeline__card {
   position: relative;
   margin-left: var(--timelineCardLineGap, 1rem);
 }
 
-.timeline{
-  --timelineMainColor: #EE671D;
+.timeline {
+  --timelineMainColor: #ee671d;
 }
 
-/*
+/* Animations */
 
+/* button */
 
+.btn::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+  z-index: -10;
+}
 
+.btn:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
 
+.btn:hover::after {
+  background-color: currentColor;
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.animate {
+  transition: 0.6s ease-out;
+}
+
+.fade--right {
+  opacity: 0;
+  transform: translateX(10rem);
+}
+
+.fade--left {
+  opacity: 0;
+  transform: translateX(-10rem);
+}
+
+.fade--down {
+  opacity: 0;
+  transform: translateY(10rem);
+}
+
+.fade--in {
+  opacity: 0;
+  transform: scale(1.2);
+}
+
+.move-in--right {
+  animation: moveInRight ease-in 0.8s;
+}
+
+.move-in--left {
+  animation: moveInLeft ease-in 0.8s;
+}
+
+.move-in--bottom {
+  animation: moveInBottom ease-in 0.4s 0.7s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
