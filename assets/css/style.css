@@ -245,3 +245,10 @@ extensions
     transform: translateX(0);
   }
 }
+
+.btn_nbg {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: transparent !important;
+}
