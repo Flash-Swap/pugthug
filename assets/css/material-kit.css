@@ -16159,7 +16159,7 @@ textarea {
 }
 
 .info p {
-  color: #0d0907;
+  color: #fff;
 }
 
 .info-horizontal {
@@ -20209,9 +20209,3 @@ footer .pull-center {
     width: 245px;
   }
 }
-
-/* Card bg */
-
-/* .card.card-rotate.bg-warning .back {
-  background: linear-gradient(60deg, #ffa726, #f57c00);
-} */
