@@ -16075,7 +16075,7 @@ textarea {
 
 .nav-pills .nav-item .nav-link.active {
   color: #ffffff;
-  background-color: #0081a7;
+  background-color: #9d5a00;
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2),
     0 13px 24px -11px rgba(0, 129, 167, 0.6);
 }
@@ -16154,7 +16154,7 @@ textarea {
 }
 
 .info .info-title {
-  color: #0081a7;
+  color: #9d5a00;
   margin: 1.75rem 0 0.875rem;
 }
 
@@ -16316,7 +16316,7 @@ small,
 .footer-big h4 a,
 .media .media-heading,
 .media .media-heading a {
-  color: #0081a7;
+  color: #9d5a00;
   text-decoration: none;
 }
 
