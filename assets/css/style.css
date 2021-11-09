@@ -1,7 +1,7 @@
 :root {
   --primary-color: #ee671d;
   --ssecondary-color: #0d0907;
-  --title-color: #0081a7;
+  --title-color: #9d5a00;
   --color-dark: #fffefd;
 }
 
@@ -244,11 +244,4 @@ extensions
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-.btn_nbg {
-  color: #fff;
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: transparent !important;
 }
