@@ -245,3 +245,24 @@ extensions
     transform: translateX(0);
   }
 }
+
+.header-btn {
+  margin-right: 1rem;
+}
+
+.header-btn::after {
+  background-color: #ee671d;
+  animation: glow 1.5s ease 0.2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    transform: scaleX(1) scaleY(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+}
