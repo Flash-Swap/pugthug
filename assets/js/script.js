@@ -8,6 +8,10 @@
 
 // const animate = document.querySelectorAll('.animate');
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 const animate = document.querySelectorAll('.animate');
 
 const showAnimation = function (entries, observer) {
