@@ -158,21 +158,188 @@
     </div>
   </div>
 
-  <!-- Whitelist -->
-  <div class="section presale-whitelist animate" id="whitelist"  data-animate="down">
+  <!-- Buy -->
+  <div class="how-to-buy" id="howtobuy">
     <div class="container mb-5">
       <div class="text-center">
         <div class="row">
-          <div class="col-md-8 ml-auto mr-auto">
-            <h2 class="title text-primary">Become a Pugfather Army.</h2>
-            <p class="description"> To get $PUGT token, join the community to become eligible for whitelisting before presale launch on Dex.</p>
+          <div class="animate col-md-8 ml-auto mr-auto" data-animate="down">
+            <h2 class="title text-primary">HOW TO BUY</h2>
+            <p class="description"> The only place to buy or sell <span class="text-primary">$PUGT</span> safely is on Pancakeswap. 
+              $PUGT will also be listed in some centralized exchanges, but CEXs have a history of locking funds. 
+              If you can, it is safer to trade on a decentralized exchange like Pancakeswap or Biswap. <br> Follow the steps below to buy <span class="text-primary">$PUGT</span></p>
           </div>
         </div>
-        <a href="https://t.me/pugfather_refbot" class="btn btn-primary-soft lift" target="blank">
-          Join Whitelist
-        </a>
+      </div>
+
+      <div class="row">
+        <div class="animate col-md-8 ml-auto mr-auto" data-animate="left">
+          <div class="mt-5">
+            <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#step1" role="tab" data-toggle="tab">
+                  STEP 1
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#step2" role="tab" data-toggle="tab">
+                  STEP 2
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#step3" role="tab" data-toggle="tab">
+                  STEP 3
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#step4" role="tab" data-toggle="tab">
+                  STEP 4
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content tab-space">
+        <div class="tab-pane active" id="step1">
+          <div class="row align-items-center">
+            <div class="animate col-12 col-md-5 col-lg-6 order-1 order-md-2" data-animate="left">
+  
+              <!-- Image -->
+              <div class="row">
+                <div class="col-lg-4 apple">
+                  <a href="https://apps.apple.com/app/apple-store/id1288339409?mt=8" class="downloadapp">
+                    <svg class="download-app-image download-apple" loading="lazy" alt="download app store" rel="noopener"></svg>
+                  </a>
+                </div>
+                <div class="col-lg-4 ml-lg-2 googleplay">
+                  <a href="https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&referrer=utm_source%3Dwebsite" class="downloadapp">
+                    <svg class="download-app-image download-play" loading="lazy" alt="download google play" rel="noopener"></svg>
+                  </a>
+                </div>
+              </div>
+  
+            </div>
+            <div class="col-12 col-md-7 col-lg-6 order-md-1">
+              <!-- Heading -->
+              <h3 class="animate" data-animate="left">
+                <span class="info-title">Download Trust Wallet.</span>
+              </h3>
+              <!-- Text -->
+              <p class="animate" data-animate="left">
+                Download Trust Wallet from Goolge Play for android and App Store for iOS users and create a wallet.  <br> <span class="text-danger"> Keep your phrase a secret! Never share it with anyone and store it properly!</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="step2">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2">
+  
+              <!-- Image -->
+              <img src="assets/img/step-2.png" alt="..." class="img-fluid mb-6 mb-md-0">
+  
+            </div>
+            <div class="col-12 col-md-7 col-lg-6 order-md-1">
+  
+              <!-- Heading -->
+              <h3>
+                <span class="info-title">Add <Span class="text-primary">$PUGT</Span> to the Wallet.</span>
+              </h3>
+  
+              <!-- Text -->
+              <div class="mb-5">
+                <p>
+                  Tap the icon in the top-right and search for "PugFather". If it's not there, tap "Add Custom Token".
+                </p>
+                <p>
+                  At the top, tap "Ethereum" next to Network, and change it to "Smart Chain". Copy the contract address on this page and put it in the Contract Address box.
+                </p>
+                <p>
+                  Next, put "PugFather" as the name, and the symbol as PUGT. Decimals will be 9.
+                </p>
+                <p>
+                  Click "Done" at the top and you should now have PUGT added to your wallet.
+                </p>
+                <br> <span class="text-danger"> Make sure to copy the contract address from below!</span>
+              </div>
+
+              <div class="input-group mb-4" style="max-width:700px">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    Address
+                  </div>
+                </div>
+                <input type="text" value="0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3" class="form-control border-0" style="font-family:monospace;font-size:14px" id="copyField" readonly>
+                <div class="input-group-append">
+                  <button class="btn btn-success my-0" onclick="copyAddress()">
+                    <i class="far fa-copy"></i> Copy
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="step3">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2">
+  
+              <!-- Image -->
+              <img src="assets/img/step-3.png" alt="..." class="img-fluid mb-6 mb-md-0">
+  
+            </div>
+            <div class="col-12 col-md-7 col-lg-6 order-md-1">
+  
+              <!-- Heading -->
+              <h3>
+                <span class="info-title">Buy "Smart Chain" (BNB).</span>
+              </h3>
+  
+              <!-- Text -->
+              <p>
+                Tap on "Smart Chain" on the main screen of trust wallet, then tap "Buy" in the top right. This step may require KYC verification, so have documents ready to prove your identity.
+                <br> <span class="text-danger"> If the transaction won't go through, you may need to contact your bank to allow international transactions.</span>
+              </p>
+              <p>
+                After purchasing, there may be a delay while your transaction is processed. Be patient, this is normal!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="step4">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2">
+  
+              <!-- Image -->
+              <img src="assets/img/step-4.png" alt="..." class="img-fluid mb-6 mb-md-0">
+  
+            </div>
+            <div class="col-12 col-md-7 col-lg-6 order-md-1">
+  
+              <!-- Heading -->
+              <h3>
+                <span class="info-title">Swap BSC for PugToken(<span class="text-primary"> $PUGT</span>).
+              </h3>
+  
+              <!-- Text -->
+              <p>
+                Once you have BNB on your Trust Wallet, Go to DApps (or "Browser" for iPhones) at the bottom of the main screen. If the Browser button is not visible at the bottom for iPhone, open Safari and in the URL type <span class="text-info">trust://browser_enable</span>, then return to trust wallet.
+              </p>
+              <p>
+                Open the DApps, or Browser, section and find PancakeSwap and open it. Connect your Trust Wallet in the top-right. Scroll down a little to the "Exchange" box
+              </p>
+              <p>
+                Click the <span class="material-icons">
+                  settings
+                  </span> icon and set the slippage to 12%. If you want to give it the best possible change to clear, increase the deadline. By default it should be set to 20 minutes, which is fine. Swap BNB for PUGT.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
   </div>
 
 
